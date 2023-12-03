@@ -81,24 +81,25 @@ function clicaBotao() {
 }
 function buscaCasa(dados, item) {
     let op = document.querySelector(`#${item}`)
-    found = dados.find((element) => element == item)
-    if (found == item) {
-        op.style.background = "green"
-        op.style.color = "white"
-        opcao[dados.indexOf(found)].innerText = item
-        formataLetra(opcao[dados.indexOf(found)])
-        acertos = acertos + 1
-        console.log(acertos)
-    } else {
-        tentativas = tentativas + 1
-        op.setAttribute('disabled', 'disabled')
+    for (i = 0; i < dados.length; i++) {
+        if (dados[i] == item) {
+            op.style.background = "green"
+            op.style.color = "white"
+            opcao[i].innerText = item
+            formataLetra(opcao[i])
+            acertos = acertos + 1
+        } else {
+            found = dados.find((element) => element == item)
+            found != item? tentativas = tentativas + 1: ''
+            op.setAttribute('disabled', 'disabled')
+        }
     }
 }
 function verificaTentativas() {
-    if (tentativas >= 6) {
+    if (tentativas / casas.length >= 6) {
         erros.innerHTML = `<h1>&#128542; Fim de Jogo!</h1><h3>A ${tema} é: ${palavra}</h3>`
     } else {
-        erros.innerHTML = `${tentativas > 0 ? 'Erros: ' + tentativas : ''}`
+        erros.innerHTML = `${parseInt(tentativas / casas.length) > 0 ? 'Erros: ' + parseInt(tentativas / casas.length) : ''}`
     }
 }
 function verificaAcertos() {
