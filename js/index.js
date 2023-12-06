@@ -1,8 +1,16 @@
 // Jogo da Forca
 
-const random = Math.floor(Math.random() * options.length);
+let random = Math.floor(Math.random() * options.length);
 const palavra = options[random]
 
+if(localStorage.getItem('partidasJogadas')){
+    const partidas = localStorage.getItem('partidasJogadas')
+    let jogadas = JSON.parse(partidas)
+    found = jogadas.find((element) => element == random)
+    while(random == found){
+        random = Math.floor(Math.random() * options.length);
+    }
+}
 const casas = palavra.response.toUpperCase().split('', palavra.length)
 const botao = document.querySelectorAll('.btn')
 let letras = document.querySelector('.letras')
@@ -67,6 +75,19 @@ function verificaTentativas() {
         erros.innerHTML = `${parseInt(tentativas / casas.length) > 0 ? 'Erros: ' + parseInt(tentativas / casas.length) : ''}`
     }
 }
+function partidasJogadas(){
+    if(!localStorage.getItem('partidasJogadas')){
+        let partidasJogadas = []
+        partidasJogadas.push(random)
+        let p = JSON.stringify(partidasJogadas)
+        localStorage.setItem('partidasJogadas',p)
+    }else{
+        par = JSON.parse(localStorage.getItem('partidasJogadas'))
+        par.push(random)
+        let p = JSON.stringify(par)
+        localStorage.setItem('partidasJogadas',p)
+    }
+}
 function generatePontuacao() {
     if (!sessionStorage.getItem('pontuacao')) {
         sessionStorage.setItem('pontuacao', 1)
@@ -84,6 +105,7 @@ function verificaAcertos() {
     if (acertos == casas.length) {
         generatePontuacao()
         renderPontucacao()
+        partidasJogadas()
         setTimeout(() => {
             soundPlay.play()
             erros.innerHTML = `<h1>&#129395; Parabéns!</h1><h3>${palavra.gender == 'f' ? "A" : "O"} ${palavra.theme} é: ${palavra.response}</h3>`
