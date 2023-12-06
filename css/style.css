@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #F0FFF0;
+    background-color: #eef3ee;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,12 +44,14 @@ button[disabled] {
     background-color: #ccc;
     color: #666666;
 }
-
+.palavra{
+    display: flex;
+    flex-direction: column;
+}
 .palavra .letras {
     display: flex;
     gap: 10px;
     align-items: flex-end;
-    height: 45px;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -100,4 +102,9 @@ button[disabled] {
     display: block;
     height: 35px;
     width: 35px;
+}
+.pontuacao{
+    margin-top: 30px;
+    font-weight: 600;
+    color: rgb(148, 86, 193);
 }

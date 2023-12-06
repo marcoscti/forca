@@ -1,32 +1,111 @@
 const options = [
     {
-        'theme':'Cor',
+        'theme': 'Cor',
         'response': 'AZUL',
-        'gender':'f'
-    },
+        'gender': 'f'
+    }
+    ,
     {
-        'theme':'Cor',
+        'theme': 'Cor',
         'response': 'AMARELO',
-        'gender':'f'
+        'gender': 'f'
     },
     {
-        'theme':'Cor',
+        'theme': 'Cor',
         'response': 'rosa',
-        'gender':'f'
+        'gender': 'f'
     },
     {
-        'theme':'Cor',
+        'theme': 'Cor',
         'response': 'branca',
-        'gender':'f'
+        'gender': 'f'
     },
     {
-        'theme':'Animal',
+        'theme': 'Animal',
         'response': 'ELEFANTE',
-        'gender':'m'
+        'gender': 'm'
     },
     {
-        'theme':'Animal',
+        'theme': 'Animal',
         'response': 'Rinoceronte',
-        'gender':'m'
+        'gender': 'm'
+    },
+    {
+        'theme': 'Animal',
+        'response': 'andorinha',
+        'gender': 'm'
+    }
+    ,
+    {
+        'theme': 'Animal',
+        'response': 'avestruz',
+        'gender': 'm'
+    }
+    ,
+    {
+        'theme': 'Animal marinho',
+        'response': 'atum',
+        'gender': 'm'
+    }
+    ,
+    {
+        'theme': 'Inseto',
+        'response': 'barata',
+        'gender': 'm'
+    }
+    ,
+    {
+        'theme': 'Inseto',
+        'response': 'mosquito',
+        'gender': 'm'
+    }
+    ,
+    {
+        'theme': 'Animal',
+        'response': 'centopeia',
+        'gender': 'm'
+    }
+    ,
+    {
+        'theme': 'Animal',
+        'response': 'chinchila',
+        'gender': 'm'
+    }
+    ,
+    {
+        'theme': 'Inseto',
+        'response': 'cigarra',
+        'gender': 'm'
+    },
+    {
+        'theme': 'Time de Futebol',
+        'response': 'Vasco',
+        'gender': 'm'
+    }
+    ,
+    {
+        'theme': 'Time de Futebol',
+        'response': 'Corinthians',
+        'gender': 'm'
+    },
+    {
+        'theme': 'Time de Futebol',
+        'response': 'Palmeiras',
+        'gender': 'm'
+    },
+    {
+        'theme': 'Time de Futebol',
+        'response': 'Flamengo',
+        'gender': 'm'
+    },
+    {
+        'theme': 'Time de Futebol',
+        'response': 'Juventude',
+        'gender': 'm'
+    },
+    {
+        'theme': 'Cidade na Bahia',
+        'response': 'Salvador',
+        'gender': 'fs'
     }
 ]
