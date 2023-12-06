@@ -68,6 +68,11 @@ button[disabled] {
 
 .title {
     font-size: 48px;
+    font-family: 'Press Start 2P';
+    line-height: 1.5;
+    letter-spacing: 2;
+    color: #4B0082;
+    text-shadow: 3px 3px 1px #c8c8c8;
 }
 
 .tema {
