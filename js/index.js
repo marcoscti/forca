@@ -99,7 +99,7 @@ function generatePontuacao() {
 
 }
 function renderPontucacao() {
-    document.querySelector('.pontuacao').innerText = sessionStorage.getItem('pontuacao') ? `Sua Pontuação é:${sessionStorage.getItem('pontuacao')}` : 'Você ainda não pontuou!'
+    document.querySelector('.pontuacao').innerHTML = sessionStorage.getItem('pontuacao') ? `Sua Pontuação é: <b>${sessionStorage.getItem('pontuacao')}<b>` : 'Você ainda não pontuou!'
 }
 function verificaAcertos() {
     if (acertos == casas.length) {
