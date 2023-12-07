@@ -23,6 +23,7 @@ section {
     gap: 10px;
     flex-wrap: wrap;
     margin-top: 90px;
+    justify-content: center;
 }
 
 .alfabeto button {
@@ -118,6 +119,9 @@ button[disabled] {
 }
 
 @media (max-width:500px) {
+    section{
+        gap: 0;
+    }
     #btn-new {
         bottom: 5%;
         right: 5%;
