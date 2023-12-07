@@ -70,6 +70,7 @@ function buscaCasa(dados, item) {
 function verificaTentativas() {
     if (tentativas / casas.length >= 6) {
         soundOver.play()
+        bloqueiaBotao()
         erros.innerHTML = `<h1>&#128542; Fim de Jogo!</h1><h3>${palavra.gender == 'f' ? "A" : "O"} ${palavra.theme} é: ${palavra.response.toUpperCase()}</h3>`
     } else {
         erros.innerHTML = `${parseInt(tentativas / casas.length) > 0 ? 'Erros: ' + parseInt(tentativas / casas.length) : ''}`

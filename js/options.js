@@ -3,11 +3,41 @@ const options = [
         'theme': 'Cor',
         'response': 'AZUL',
         'gender': 'f'
-    }
-    ,
+    },
+    {
+        'theme': 'Cor',
+        'response': 'Marrom',
+        'gender': 'f'
+    },
+    {
+        'theme': 'Cor',
+        'response': 'Verde',
+        'gender': 'f'
+    },
+    {
+        'theme': 'Cor',
+        'response': 'Laranja',
+        'gender': 'f'
+    },
+
     {
         'theme': 'Cor',
         'response': 'AMARELO',
+        'gender': 'f'
+    },
+    {
+        'theme': 'Cor',
+        'response': 'Fuscia',
+        'gender': 'f'
+    },
+    {
+        'theme': 'Cor',
+        'response': 'Cinza',
+        'gender': 'f'
+    },
+    {
+        'theme': 'Cor',
+        'response': 'Preto',
         'gender': 'f'
     },
     {
@@ -18,6 +48,11 @@ const options = [
     {
         'theme': 'Cor',
         'response': 'branca',
+        'gender': 'f'
+    },
+    {
+        'theme': 'Cor',
+        'response': 'roxo',
         'gender': 'f'
     },
     {
@@ -61,17 +96,15 @@ const options = [
     }
     ,
     {
-        'theme': 'Animal',
+        'theme': 'Inseto',
         'response': 'centopeia',
         'gender': 'm'
-    }
-    ,
+    },
     {
         'theme': 'Animal',
         'response': 'chinchila',
         'gender': 'm'
-    }
-    ,
+    },
     {
         'theme': 'Inseto',
         'response': 'cigarra',
@@ -107,5 +140,44 @@ const options = [
         'theme': 'Cidade na Bahia',
         'response': 'Salvador',
         'gender': 'fs'
+    },
+    {
+        'theme': 'Profissão',
+        'response': 'Carpintaria',
+        'gender': 'f'
+    },
+    {
+        'theme': 'Profissão',
+        'response': 'Programador',
+        'gender': 'f'
+    },
+    {
+        'theme': 'Profissão',
+        'response': 'Arquitetura',
+        'gender': 'f'
+    },{
+        'theme': 'Profissão',
+        'response': 'Professor',
+        'gender': 'f'
+    },
+    {
+        'theme': 'Profissão',
+        'response': 'Vendas',
+        'gender': 'f'
+    },
+    {
+        'theme': 'Fruta',
+        'response': 'Melancia',
+        'gender': 'f'
+    },
+    {
+        'theme': 'Equimento de segurança',
+        'response': 'Capacete',
+        'gender': 'm'
+    },
+    {
+        'theme': 'Calçado',
+        'response': 'Sandalia',
+        'gender': 'm'
     }
 ]
